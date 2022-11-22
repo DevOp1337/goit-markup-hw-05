@@ -502,7 +502,7 @@ margin-right: 30px;
     align-items: center;
 
     transition-property: background-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: var(--animation-cubic);
 }
 
@@ -524,7 +524,7 @@ margin-right: 30px;
     fill: var(--icon-color);
 
     transition-property: fill;
-    transition-duration: 25000ms;
+    transition-duration: 250ms;
     transition-timing-function: var(--animation-cubic);
 }
 
@@ -583,7 +583,7 @@ margin-right: 30px;
 .clients-icon{
     fill: var(--icon-color);
 
-    transition: fill 2500ms var(--animation-cubic);
+    transition: fill 250ms var(--animation-cubic);
 }
 
 .clients-link{
