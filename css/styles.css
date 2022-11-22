@@ -946,6 +946,7 @@ margin-right: 30px;
     transition-property: opacity visibility;
     transition-duration: 250ms;
     transition-timing-function: var(--animation-cubic);
+    z-index: 3;
     
 }
 
