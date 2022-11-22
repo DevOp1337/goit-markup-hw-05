@@ -523,8 +523,11 @@ margin-right: 30px;
 
     fill: var(--icon-color);
 
-    transition: fill 2500ms var(--animation-cubic);
+    transition-property: fill;
+    transition-duration: 25000ms;
+    transition-timing-function: var(--animation-cubic);
 }
+
 .team-list .social-item:last-child{
     margin-right: 0;
 }
@@ -928,5 +931,67 @@ margin-right: 30px;
     color: var(--white);
 }
 
+
+/* модалка */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition-property: opacity visibility;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation-cubic);
+    
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    
+}
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(1.1) ;
+
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: 3;
+    transform: translate(-50%, -50%) scale(1);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation-cubic);
+
+
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    
+}
+
+.modal-btn{
+    position: absolute;
+
+    padding: 0;
+    top: 8px;
+    right: 8px;
+    /* width: 30px;
+    height: 30px; */
+    border: none;
+    background-color: #fff;
+
+}
 
 
